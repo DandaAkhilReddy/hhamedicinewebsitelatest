@@ -398,7 +398,18 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
 }
 
-/* Image placeholder */
+/* Section images */
+.section-image {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-lg);
+  object-fit: cover;
+  min-height: 350px;
+  max-height: 500px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Image placeholder (fallback) */
 .image-placeholder {
   background: linear-gradient(135deg, var(--color-light-gray) 0%, var(--color-off-white) 100%);
   border-radius: var(--radius-lg);
