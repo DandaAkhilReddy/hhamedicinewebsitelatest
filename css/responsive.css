@@ -1,0 +1,95 @@
+/* ============================================
+   Responsive Styles - Mobile First
+   ============================================ */
+
+/* ---- Tablet (768px+) ---- */
+@media (min-width: 768px) {
+  /* Navigation */
+  .nav-toggle {
+    display: none;
+  }
+
+  .main-nav {
+    display: flex;
+  }
+
+  .nav-list {
+    flex-direction: row;
+    gap: var(--space-lg);
+  }
+
+  .nav-link {
+    font-size: 0.9375rem;
+  }
+
+  /* Two-column layout */
+  .two-column {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .two-column.reverse {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .two-column.reverse .text-content {
+    order: 2;
+  }
+
+  .two-column.reverse .image-content {
+    order: 1;
+  }
+
+  /* Values grid */
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+
+  .footer-bottom-inner {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  /* Benefits grid */
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ---- Desktop (1024px+) ---- */
+@media (min-width: 1024px) {
+  /* Values grid */
+  .values-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Hero */
+  .hero-content {
+    padding-block: 10rem 8rem;
+  }
+
+  /* Sections */
+  .about,
+  .values,
+  .join,
+  .job-posting,
+  .apply-section {
+    padding: 5rem 0;
+  }
+
+  /* Benefits grid on desktop */
+  .benefits-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ---- Large Desktop (1440px+) ---- */
+@media (min-width: 1440px) {
+  .container {
+    padding-inline: 2rem;
+  }
+}
