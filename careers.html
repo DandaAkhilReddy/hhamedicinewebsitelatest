@@ -11,7 +11,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/styles.css">
@@ -26,14 +26,7 @@
   <header class="site-header scrolled" id="site-header">
     <div class="container header-inner">
       <a href="index.html" class="logo" aria-label="HHA Physician Associates - Home">
-        <svg class="logo-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <rect width="40" height="40" rx="8" fill="#2A9D8F"/>
-          <path d="M10 15h6v10h-6zM24 15h6v10h-6zM16 18h8v4h-8z" fill="white"/>
-        </svg>
-        <div class="logo-text">
-          <span class="logo-name">HHA Physician Associates</span>
-          <span class="logo-tagline">Care Forward</span>
-        </div>
+        <img src="assets/images/HHA_LOGO.svg" class="logo-image" alt="HHA Physician Associates logo">
       </a>
 
       <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
@@ -82,7 +75,7 @@
 
           <div class="job-body">
             <h3>Position Overview</h3>
-            <p style="color: var(--color-dark-gray); margin-bottom: var(--space-lg); line-height: 1.7;">
+            <p class="job-intro">
               HHA Physician Associates is recruiting a Hospitalist Physician to deliver inpatient care in Plantation, Florida. The role involves managing hospitalized patients throughout their stay, practicing evidence-based medicine within a collaborative setting. HHA is a non-profit organization committed to putting patients first.
             </p>
 
@@ -144,7 +137,7 @@
           <a href="mailto:asimon@hhamedicine.com?subject=Hospitalist%20Physician%20Application" class="btn btn-accent btn-lg">
             Email Your Resume
           </a>
-          <p style="margin-top: var(--space-md); font-size: 0.875rem; color: var(--color-medium-gray);">
+          <p class="apply-email">
             asimon@hhamedicine.com
           </p>
         </div>
@@ -157,12 +150,9 @@
     <div class="container footer-grid">
       <div class="footer-brand">
         <a href="index.html" class="footer-logo" aria-label="HHA Physician Associates - Home">
-          <svg class="logo-icon" width="36" height="36" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <rect width="40" height="40" rx="8" fill="#2A9D8F"/>
-            <path d="M10 15h6v10h-6zM24 15h6v10h-6zM16 18h8v4h-8z" fill="white"/>
-          </svg>
-          <span>HHA Physician Associates</span>
+          <img src="assets/images/HHA_LOGO.svg" class="footer-logo-image" alt="HHA Physician Associates logo">
         </a>
+        <p class="footer-brand-name">HHA Physician Associates</p>
         <p>Advancing the practice of Hospital Medicine by putting patients first.</p>
         <p class="footer-nonprofit">A non-profit hospitalist organization.</p>
       </div>

@@ -1,28 +1,31 @@
 :root {
-  /* Primary - Deep medical blue */
-  --color-primary: #1B3A5C;
-  --color-primary-light: #2A5A8C;
-  --color-primary-dark: #0F2440;
+  /* Primary - clinical navy */
+  --color-primary: #0F3159;
+  --color-primary-light: #1E4F82;
+  --color-primary-dark: #0A2443;
 
-  /* Accent - Teal */
-  --color-accent: #2A9D8F;
-  --color-accent-light: #40B4A6;
-  --color-accent-dark: #1E7A6E;
+  /* Brand accents from logo */
+  --color-accent: #FC9569;
+  --color-accent-light: #FFB492;
+  --color-accent-dark: #E27D52;
+  --color-highlight: #BD6491;
+  --color-highlight-light: #D48BB1;
 
   /* Neutrals */
   --color-white: #FFFFFF;
-  --color-off-white: #F7F9FC;
-  --color-light-gray: #E8ECF1;
-  --color-medium-gray: #6B7B8D;
-  --color-dark-gray: #3A4A5C;
-  --color-black: #1A1A2E;
+  --color-off-white: #F6F9FD;
+  --color-surface: #EEF3F9;
+  --color-light-gray: #D8E2EE;
+  --color-medium-gray: #5E7289;
+  --color-dark-gray: #2F435A;
+  --color-black: #102136;
 
   /* Semantic */
-  --color-error: #E74C3C;
+  --color-error: #D84C4C;
 
   /* Typography */
-  --font-heading: 'Inter', 'Segoe UI', system-ui, sans-serif;
-  --font-body: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  --font-heading: 'Manrope', 'Segoe UI', system-ui, sans-serif;
+  --font-body: 'Source Sans 3', 'Segoe UI', system-ui, sans-serif;
 
   /* Spacing */
   --space-xs: 0.25rem;
@@ -38,12 +41,12 @@
   --container-padding: 1.5rem;
 
   /* Border radius */
-  --radius-sm: 4px;
-  --radius-md: 6px;
-  --radius-lg: 12px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 18px;
 
   /* Shadows */
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.12);
+  --shadow-sm: 0 2px 8px rgba(15, 49, 89, 0.08);
+  --shadow-md: 0 8px 24px rgba(15, 49, 89, 0.1);
+  --shadow-lg: 0 20px 48px rgba(15, 49, 89, 0.14);
 }

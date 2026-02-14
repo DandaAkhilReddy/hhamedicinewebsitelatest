@@ -1,10 +1,49 @@
 /* ============================================
-   Responsive Styles - Mobile First
+   Responsive Styles
    ============================================ */
 
-/* ---- Tablet (768px+) ---- */
+/* ---- Compact phones ---- */
+@media (max-width: 480px) {
+  .container {
+    padding-inline: 1rem;
+  }
+
+  .header-inner {
+    min-height: 74px;
+    padding-block: 0.55rem;
+    gap: 0.5rem;
+  }
+
+  .logo-image {
+    width: clamp(126px, 43vw, 150px);
+  }
+
+  .hero-content {
+    padding-block: 8rem 5rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .job-header,
+  .job-body,
+  .apply-content {
+    padding-inline: 1.2rem;
+  }
+
+  .footer-logo-image {
+    width: clamp(150px, 58vw, 210px);
+  }
+}
+
+/* ---- Tablet and up ---- */
 @media (min-width: 768px) {
-  /* Navigation */
   .nav-toggle {
     display: none;
   }
@@ -15,20 +54,32 @@
 
   .nav-list {
     flex-direction: row;
-    gap: var(--space-lg);
+    gap: 1.1rem;
+    align-items: center;
   }
 
   .nav-link {
-    font-size: 0.9375rem;
+    font-size: 0.95rem;
   }
 
-  /* Two-column layout */
+  .main-nav .btn {
+    padding: 0.54rem 0.95rem;
+    font-size: 0.88rem;
+  }
+
+  .header-inner {
+    min-height: 84px;
+    gap: 1rem;
+    padding-block: 0.7rem;
+  }
+
+  .logo-image {
+    width: clamp(180px, 25vw, 280px);
+  }
+
   .two-column {
     grid-template-columns: 1fr 1fr;
-  }
-
-  .two-column.reverse {
-    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
   }
 
   .two-column.reverse .text-content {
@@ -39,14 +90,13 @@
     order: 1;
   }
 
-  /* Values grid */
   .values-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /* Footer */
   .footer-grid {
     grid-template-columns: 2fr 1fr 1fr;
+    gap: var(--space-lg);
   }
 
   .footer-bottom-inner {
@@ -54,42 +104,58 @@
     justify-content: space-between;
   }
 
-  /* Benefits grid */
   .benefits-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* ---- Desktop (1024px+) ---- */
+/* ---- Desktop ---- */
 @media (min-width: 1024px) {
-  /* Values grid */
-  .values-grid {
-    grid-template-columns: repeat(3, 1fr);
+  .logo-image {
+    width: clamp(210px, 23vw, 320px);
   }
 
-  /* Hero */
+  .nav-list {
+    gap: 1.4rem;
+  }
+
+  .main-nav .btn {
+    padding: 0.58rem 1.02rem;
+  }
+
   .hero-content {
-    padding-block: 10rem 8rem;
+    padding-block: 10rem 7.4rem;
   }
 
-  /* Sections */
   .about,
   .values,
   .join,
   .job-posting,
   .apply-section {
-    padding: 5rem 0;
+    padding: 5.35rem 0;
   }
 
-  /* Benefits grid on desktop */
+  .values-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.3rem;
+  }
+
   .benefits-grid {
     grid-template-columns: repeat(4, 1fr);
   }
+
+  .apply-content {
+    padding: 2.5rem 2.4rem;
+  }
 }
 
-/* ---- Large Desktop (1440px+) ---- */
+/* ---- Large desktop ---- */
 @media (min-width: 1440px) {
   .container {
     padding-inline: 2rem;
+  }
+
+  .hero-content {
+    max-width: 860px;
   }
 }
