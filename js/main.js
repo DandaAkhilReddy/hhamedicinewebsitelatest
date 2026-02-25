@@ -101,4 +101,45 @@
       observer.observe(el);
     });
   }
+
+  // ---- Application Form ----
+  var showFormBtn = document.getElementById('show-form-btn');
+  var applicationForm = document.getElementById('application-form');
+  var thankYouMessage = document.getElementById('thank-you-message');
+
+  if (showFormBtn && applicationForm) {
+    showFormBtn.addEventListener('click', function () {
+      showFormBtn.style.display = 'none';
+      applicationForm.style.display = 'block';
+    });
+
+    applicationForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      var nameInput = document.getElementById('applicant-name');
+      var emailInput = document.getElementById('applicant-email');
+      var valid = true;
+
+      [nameInput, emailInput].forEach(function (input) {
+        input.classList.remove('invalid');
+      });
+
+      if (!nameInput.value.trim()) {
+        nameInput.classList.add('invalid');
+        valid = false;
+      }
+
+      if (!emailInput.value.trim() || emailInput.value.indexOf('@') === -1) {
+        emailInput.classList.add('invalid');
+        valid = false;
+      }
+
+      if (!valid) return;
+
+      applicationForm.style.display = 'none';
+      if (thankYouMessage) {
+        thankYouMessage.style.display = 'block';
+      }
+    });
+  }
 })();

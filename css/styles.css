@@ -828,6 +828,118 @@ p {
   font-weight: 600;
 }
 
+.apply-email-link {
+  color: var(--color-primary-light);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.apply-email-link:hover,
+.apply-email-link:focus-visible {
+  color: var(--color-accent-dark);
+}
+
+/* Application Form */
+.application-form {
+  text-align: left;
+  margin-top: var(--space-lg);
+}
+
+.form-group {
+  margin-bottom: var(--space-md);
+}
+
+.form-group label {
+  display: block;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: var(--color-primary);
+  margin-bottom: 0.35rem;
+}
+
+.form-group .required {
+  color: var(--color-error);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.72rem 1rem;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--color-dark-gray);
+  background: var(--color-white);
+  border: 1.5px solid var(--color-light-gray);
+  border-radius: var(--radius-md);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--color-primary-light);
+  box-shadow: 0 0 0 3px rgba(30, 79, 130, 0.12);
+}
+
+.form-group input.invalid,
+.form-group textarea.invalid {
+  border-color: var(--color-error);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-note {
+  font-size: 0.9rem;
+  color: var(--color-medium-gray);
+  margin-bottom: var(--space-md);
+}
+
+.form-note a {
+  color: var(--color-primary-light);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* Thank You Message */
+.thank-you-message {
+  padding: var(--space-xl) var(--space-md);
+  text-align: center;
+  animation: fadeInUp 0.5s ease;
+}
+
+.thank-you-message svg {
+  color: #2e9e5a;
+  margin-bottom: var(--space-md);
+}
+
+.thank-you-message h3 {
+  font-size: 1.6rem;
+  color: var(--color-primary);
+  margin-bottom: var(--space-sm);
+}
+
+.thank-you-message p {
+  font-size: 1.06rem;
+  margin-bottom: var(--space-sm);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* ============================================
    Subtle Motion
    ============================================ */

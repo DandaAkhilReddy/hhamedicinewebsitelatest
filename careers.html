@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Join HHA Physician Associates — a non-profit hospitalist group seeking experienced hospital medicine providers in Florida and Texas.">
+  <meta name="description" content="Join HHA Hospital Medicine of Texas PLLC — hospitalist opportunity for employment in Corpus Christi, TX.">
 
   <meta property="og:title" content="Careers | HHA Physician Associates">
-  <meta property="og:description" content="Join our physician-led, academically minded team. Now hiring hospitalist physicians in Florida and Texas.">
+  <meta property="og:description" content="Hospitalist opportunity for employment in Corpus Christi with HHA Hospital Medicine of Texas PLLC.">
   <meta property="og:type" content="website">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -59,7 +59,7 @@
       <div class="container">
         <article class="job-card">
           <div class="job-header">
-            <h2>We Are Hiring Hospitalist Physicians</h2>
+            <h2>Hospitalist Opportunity</h2>
             <div class="job-meta">
               <span class="badge">Full-Time</span>
               <span class="badge">Immediate Start</span>
@@ -68,17 +68,17 @@
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                   <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#6B7B8D"/>
                 </svg>
-                Plantation, FL
+                Corpus Christi, TX
               </span>
             </div>
           </div>
 
           <div class="job-body">
             <p class="job-intro">
-              HHA Physician Associates is hiring Hospitalist Physicians to join our physician-led, patient-first team in Plantation, Florida.
+              Hospitalist opportunity for employment in Corpus Christi with HHA Hospital Medicine of Texas PLLC.
             </p>
             <p>
-              If you are interested in joining HHA, please email your resume to our recruiting team using the apply section below.
+              If you are interested, please apply using the form below or email your resume directly to our recruiting team.
             </p>
           </div>
         </article>
@@ -90,13 +90,41 @@
       <div class="container">
         <div class="apply-content">
           <h2>Apply Now</h2>
-          <p>Interested in joining our team? Send your resume and cover letter to our recruiting team. We look forward to hearing from you.</p>
-          <a href="mailto:asimon@hhamedicine.com?subject=Hospitalist%20Physician%20Application" class="btn btn-accent btn-lg">
-            Email Your Resume
-          </a>
-          <p class="apply-email">
-            asimon@hhamedicine.com
-          </p>
+          <p>Interested in joining our team? Fill out the form below. For an immediate response, email your resume directly to <a href="mailto:asimon@hhamedicine.com" class="apply-email-link">asimon@hhamedicine.com</a>.</p>
+
+          <div id="application-form-wrapper">
+            <button type="button" id="show-form-btn" class="btn btn-accent btn-lg">Apply Now</button>
+
+            <form id="application-form" class="application-form" style="display: none;" novalidate>
+              <div class="form-group">
+                <label for="applicant-name">Full Name <span class="required">*</span></label>
+                <input type="text" id="applicant-name" name="name" required autocomplete="name">
+              </div>
+              <div class="form-group">
+                <label for="applicant-email">Email <span class="required">*</span></label>
+                <input type="email" id="applicant-email" name="email" required autocomplete="email">
+              </div>
+              <div class="form-group">
+                <label for="applicant-phone">Phone</label>
+                <input type="tel" id="applicant-phone" name="phone" autocomplete="tel">
+              </div>
+              <div class="form-group">
+                <label for="applicant-message">Cover Letter / Message</label>
+                <textarea id="applicant-message" name="message" rows="5"></textarea>
+              </div>
+              <p class="form-note">Please email your resume to <a href="mailto:asimon@hhamedicine.com">asimon@hhamedicine.com</a>.</p>
+              <button type="submit" class="btn btn-accent btn-lg">Submit Application</button>
+            </form>
+          </div>
+
+          <div id="thank-you-message" class="thank-you-message" style="display: none;">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="currentColor"/>
+            </svg>
+            <h3>Thank you for applying!</h3>
+            <p>We have received your application and will be in touch soon.</p>
+            <p>For an immediate response, please email <a href="mailto:asimon@hhamedicine.com" class="apply-email-link">asimon@hhamedicine.com</a>.</p>
+          </div>
         </div>
       </div>
     </section>
