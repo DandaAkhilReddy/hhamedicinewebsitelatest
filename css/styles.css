@@ -893,17 +893,16 @@ p {
   min-height: 100px;
 }
 
-.form-note {
-  font-size: 0.9rem;
-  color: var(--color-medium-gray);
-  margin-bottom: var(--space-md);
+.form-group input[type="file"] {
+  padding: 0.6rem 0.85rem;
+  cursor: pointer;
 }
 
-.form-note a {
-  color: var(--color-primary-light);
-  font-weight: 600;
-  text-decoration: underline;
-  text-underline-offset: 2px;
+.file-help {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--color-medium-gray);
+  margin-top: 0.3rem;
 }
 
 /* Thank You Message */
